@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def index(request):
+def index_rest(request):
     if request.method == 'GET':
         rpta = None
         status = 200
@@ -23,3 +24,7 @@ def index(request):
         return HttpResponse(rpta, status=status,)
     else:
         return HttpResponse('error', status=500)
+
+def index_view(request):
+    locals = {}
+    return render(request, 'home/index.html', locals)

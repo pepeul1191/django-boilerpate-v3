@@ -6,5 +6,5 @@ class BeforeAll():
         None
 
     def process_response(self, request, response):
-        response['x-powered-by'] = 'Ubuntu; Python; gunicorn/19.9.0;'
+        response['x-powered-by'] = 'Ubuntu;'
         return response
