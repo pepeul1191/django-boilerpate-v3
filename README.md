@@ -14,7 +14,7 @@ En caso de usar el servicio en python:
     $ cd <<nombre_ambiente>>
     $ source bin/activate
 
-Arrancar aplicación con servidor Werkzeug:
+Arrancar aplicación:
 
     $ cd <<carpeta-proyecto>>
     $ pip install -r requirements.txt
@@ -24,7 +24,7 @@ Arrancar aplicación con servidor Werkzeug:
 
     $ python manage.py startapp polls # crear aplicación
     $ pip install -r requirements.txt
-	  $ python manage.py runserver 192.168.1.9:8080
+    $ python manage.py runserver 192.168.1.9:8080
     $ python manage.py runserver localhost:8080
     $ python manage.py runserver
 
