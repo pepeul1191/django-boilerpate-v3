@@ -8,3 +8,5 @@ Gemfile.lock
 __pycache__
 env
 .vscode
+venv
+*.sqlite3

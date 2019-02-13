@@ -1,6 +1,26 @@
 # DJango Boilerplate
 
-Comandos de DJango
+Requisitos de software previamente instalado:
+
++ Python 3.5
++ Python PIP
+
+### Descipción
+
+En caso de usar el servicio en python:
+
+    $ sudo pip install virtualenv
+    $ virtualenv -p python3 <<nombre_ambiente>>
+    $ cd <<nombre_ambiente>>
+    $ source bin/activate
+
+Arrancar aplicación con servidor Werkzeug:
+
+    $ cd <<carpeta-proyecto>>
+    $ pip install -r requirements.txt
+    $ python app.py
+
+### Comandos de DJango
 
     $ python manage.py startapp polls # crear aplicación
     $ pip install -r requirements.txt
@@ -11,6 +31,11 @@ Comandos de DJango
 Ejecuar DJango con acceso a static con error404:
 
     $  python manage.py runserver localhost:8080 --insecure
+
+### PyLint
+
+    $ pylint <archivo>.py --reports=yes
+    $ pylint **/*.py --reports=yes
 
 ---
 
