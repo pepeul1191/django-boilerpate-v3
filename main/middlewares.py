@@ -10,14 +10,7 @@ class BeforeAll():
         response['x-powered-by'] = 'Ubuntu; Python; gunicorn/19.9.0;'
         return response
 
-    def __call__(self, request):
-        print('+++++++++++++++++++++++++++++++++++++++++')
-        # Code to be executed for each request before
-        # the view (and later middleware) are called.
-
-        response = self.get_response(request)
-
-        # Code to be executed for each request/response after
-        # the view is called.
-
-        return response
+    def process_exception(self, request, exception):
+        print exception.__class__.__name__
+        print exception.message
+        return None
