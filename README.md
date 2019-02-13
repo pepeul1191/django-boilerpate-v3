@@ -7,12 +7,18 @@ Requisitos de software previamente instalado:
 
 ### Descipción
 
-En caso de usar el servicio en python:
+En caso de usar el servicio en python (Linux):
 
     $ sudo pip install virtualenv
     $ virtualenv -p python3 <<nombre_ambiente>>
     $ cd <<nombre_ambiente>>
     $ source bin/activate
+
+En caso de usar el servicio en python (Windows):
+
+    > python -m venv <<nombre_ambiente>>
+    > cd <<nombre_ambiente>>/Scripts
+    > activate.bat
 
 Arrancar aplicación:
 
